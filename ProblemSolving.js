@@ -51,7 +51,7 @@ function deleteInvalids(array) {
 
     let newArray = []
     for (arr of array) {
-        if (typeof (arr) === 'number') {
+        if ((typeof (arr) === 'number') && !isNaN(arr)) {
                 newArray.push(arr)
         }
     }
